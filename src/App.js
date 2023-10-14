@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './Components/Projects';
+import Counter from './Components/Counter';
+import Slider from './Components/Slider';
 
 function App() {
   return (
@@ -7,8 +10,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload!
         </p>
+        <div>
+          <MyComponent text = "Counter inside Text Wooohooo!"/>
+        </div>
+
+        <div>
+          <Counter text = "Yuhhh"/>
+        </div>
+
+        <div>
+          <Slider />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
